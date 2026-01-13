@@ -1,0 +1,150 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* HEADER */
+header {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* BLACK NAV BAR */
+.main-nav {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.7rem 0;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* GRID */
+.cards {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+/* CARD */
+.card {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+.card h2 {
+    background-color: #1f4e79;
+    color: white;
+    padding: 0.5rem;
+    margin: -1rem -1rem 1rem -1rem;
+    border-radius: 6px 6px 0 0;
+    text-align: center;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    gap: 1rem;
+}
+
+.about img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* LOCATION TITLE */
+.location-title {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+/* LINE */
+.card hr {
+    width: 80%;
+    margin: 0 auto 1rem auto;
+    border: none;
+    border-top: 1px solid #999;
+}
+
+/* LOCATION */
+.location {
+    display: flex;
+    gap: 1rem;
+}
+
+.location figure {
+    margin: 0;
+    text-align: center;
+}
+
+.location img {
+    max-width: 200px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.location figcaption {
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-top: 0.3rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.flower {
+    margin: 0 0.5rem;
+    color: pink;
+}
+
+#lastModified {
+    color: yellow;
+    font-size: 0.9rem;
+}

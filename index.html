@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="WDD 131 – Dynamic Web Fundamentals | Paul Benson Ikechukwu | Course home page using HTML, CSS, and JavaScript.">
+    <meta name="author" content="Paul Benson Ikechukwu">
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Paul Benson Ikechukwu</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+
+<header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+    <!-- BLACK NAV BAR -->
+    <nav class="main-nav">
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+           target="_blank">Scripture</a>
+        <a href="#">Final Project</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Paul Benson Ikechukwu</h1>
+
+    <section class="cards">
+
+        <!-- ABOUT ME CARD -->
+        <section class="card">
+            <h2>About Me</h2>
+
+            <div class="about">
+                <p>
+                    My name is Paul Benson Ikechukwu. I am a student pursuing Programming
+                    and Business Administration. I enjoy learning web development,
+                    improving my technical skills, and building meaningful digital projects.
+                </p>
+
+                <img src="images/profile.webp.jpg"
+                     alt="Profile photo of Paul Benson Ikechukwu">
+            </div>
+
+            <h3 class="location-title">Ibadan, Nigeria</h3>
+            <hr>
+
+            <div class="location">
+                <figure>
+                    <img src="images/nigeria.webp.jpg" alt="Flag of Nigeria">
+                    <figcaption>Official Flag of Nigeria</figcaption>
+                </figure>
+
+                <p>
+                    Nigeria is located in West Africa and is the most populous country
+                    on the African continent. It is known for its rich culture,
+                    diverse people, and growing technology industry.
+                </p>
+            </div>
+        </section>
+
+        <!-- RESOURCES CARD -->
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+            </ul>
+        </section>
+
+    </section>
+</main>
+
+<footer>
+    <p>
+        © <span id="currentyear"></span>
+        <span class="flower">✿</span>
+        Paul Benson Ikechukwu
+        <span class="flower">✿</span>
+        Nigeria
+    </p>
+    <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
