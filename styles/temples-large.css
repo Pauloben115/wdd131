@@ -1,0 +1,16 @@
+@media only screen and (min-width: 32rem) {
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.5rem;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .album-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
