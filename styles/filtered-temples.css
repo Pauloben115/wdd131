@@ -1,20 +1,19 @@
-/* Reset */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #ffffff;
+    background: #ffffff;
     color: #222;
 }
 
-/* Header */
+/* HEADER */
 header {
-    background-color: #4b116f;
+    background: #4b116f;
     color: white;
     padding: 1rem;
     display: flex;
@@ -22,11 +21,6 @@ header {
     align-items: center;
 }
 
-header h1 {
-    font-size: 1.4rem;
-}
-
-/* Hamburger */
 #hamburger {
     font-size: 2rem;
     background: none;
@@ -35,16 +29,11 @@ header h1 {
     cursor: pointer;
 }
 
-#hamburger:focus {
-    outline: 2px solid white;
-}
-
-/* Navigation */
+/* NAVIGATION */
 nav ul {
     display: none;
     list-style: none;
-    background-color: #4b116f;
-    padding: 0.5rem 0;
+    background: #4b116f;
 }
 
 nav ul.show {
@@ -63,44 +52,60 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Main */
-main h2 {
-    text-align: center;
-    margin: 1rem 0;
+/* MAIN */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
 }
 
-/* Album */
-.album-container {
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* TEMPLE GRID */
+.temple-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1rem;
 }
 
-figure {
+.temple-container section {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
     text-align: center;
 }
 
-figure img {
+.temple-container img {
     width: 100%;
     height: auto;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-}
-
-figcaption {
+    border-radius: 6px;
     margin-top: 0.5rem;
-    font-size: 0.85rem;
-    color: #4b116f;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
-    background-color: #4b116f;
+    background: #4b116f;
     color: white;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+/* LARGE SCREENS */
+@media (min-width: 700px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .temple-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
 }
